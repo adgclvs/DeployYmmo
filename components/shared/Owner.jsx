@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
+import { useToast } from "../ui/use-toast";
 
 import { RocketIcon } from "@radix-ui/react-icons";
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
-import { useAccount, useWaitForTransactionReceipt, useWriteContract } from "wagmi";
+import { useAccount, useReadContract, useWaitForTransactionReceipt, useWriteContract } from "wagmi";
 import { contractAbi, contractAddress } from "../../constants/index";
 
 import { parseAbiItem } from "viem";

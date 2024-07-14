@@ -1,11 +1,9 @@
-"use client";
-
 import { ToastAction } from "@/components/ui/toast";
 import { useToast } from "@/components/ui/use-toast";
 import { useEffect, useState } from "react";
 import { parseEther } from "viem";
 import { useAccount, useBalance, useReadContract, useWaitForTransactionReceipt, useWriteContract } from "wagmi";
-import { tokenContractAbi, ymmoContractAbi } from "../../constants/index";
+import { contractAddress, tokenContractAbi, ymmoContractAbi } from "../../constants/index";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 
