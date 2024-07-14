@@ -493,8 +493,7 @@ const OneYmmo = ({ addressContract, IRLAddress, APY }) => {
     }
   }, [userBalance]);
 
-  if (valueIsLoading || indexIsLoading || balanceIsLoading || isLoadingOwner || isConfirming)
-    return <div>Loading...</div>;
+  if (valueIsLoading || indexIsLoading || balanceIsLoading || isLoadingOwner) return <div>Loading...</div>;
   if (valueError) return <div>Error: {valueError.message}</div>;
   if (indexError) return <div>Error: {indexError.message}</div>;
   if (balanceError) return <div>Error: {balanceError.message}</div>;
