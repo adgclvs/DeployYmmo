@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 import { useAccount } from "wagmi";
-import { contractAbi, contractAddress } from "../../constants/index";
+import { contractAddress } from "../../constants/index";
 
 import { parseAbiItem } from "viem";
 
