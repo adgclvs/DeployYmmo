@@ -501,7 +501,7 @@ const OneYmmo = ({ addressContract, IRLAddress, APY }) => {
   if (errorConfirmation) return <div>Error: {errorConfirmation.message}</div>;
 
   return (
-    <div className="p-4 bg-white rounded-lg shadow-md transform transition-transform duration-200 hover:scale-105">
+    <div className="p-4 bg-white rounded-lg shadow-md transform transition-transform duration-200 hover:scale-105 max-w-72">
       <div onClick={handleClick}>
         <img src="/img/house.jpg" alt="Property" className="w-full h-32 object-cover rounded-t-lg" />
         <div className="mt-2">
